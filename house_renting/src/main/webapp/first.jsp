@@ -1,0 +1,114 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+</style>
+</head>
+<body>
+
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="#home" class="w3-bar-item w3-button">Herle Rental Corporation</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#menu" class="w3-bar-item w3-button">Location</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+       <a href="login.jsp" class="w3-bar-item w3-button">Login</a>
+        <a href="register.jsp" class="w3-bar-item w3-button">SignUp</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+  <img src="images/house1.jpg" alt="Hamburger Catering" width="1600" height="800">
+  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+    <h1 class="w3-xxlarge">House Boarding</h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="images/house2.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">About House boarding</h1><br>
+      <h5 class="w3-center">House Boarding</h5>
+      <p class="w3-large">A boarding house is a house (frequently a family home) in which lodgers rent one or more rooms on a nightly basis, and sometimes for extended periods of weeks, months, and years. The common parts of the house are maintained, and some services, such as laundry and cleaning, may be supplied. They normally provide "room and board," that is, some meals as well as accommodation. <span class="w3-tag w3-light-grey">seasonal</span> ingredients.</p>
+      <p class="w3-large w3-text-grey w3-hide-medium">A boarding house is a house (frequently a family home) in which lodgers rent one or more rooms on a nightly basis, and sometimes for extended periods of weeks, months, and years. The common parts of the house are maintained, and some services, such as laundry and cleaning, may be supplied. They normally provide "room and board," that is, some meals as well as accommodation. </p>
+    </div>
+  </div>
+  
+  <hr>
+  
+  <!-- Menu Section -->
+  <div class="w3-row w3-padding-64" id="menu">
+    <div class="w3-col l6 w3-padding-large">
+      <h1 class="w3-center">Location</h1><br>
+      <h4>The Happiness of being centrally located</h4>
+      <p class="w3-text-grey"></p><br>
+    
+      <h4>Kempegowda International Airport</h4>
+      <p class="w3-text-grey">: Located at a distance of 12.5km, 15mins drive time</p><br>
+    
+      <h4>Aerospace Park:</h4>
+      <p class="w3-text-grey">KIADB’s 1214 hectares (3000 acres) development offers unparalleled employment opportunities</p><br>
+    
+      <h4>Companies currently operating:</h4>
+      <p class="w3-text-grey">Wipro, Shell Technologies, Centrum electronics, Dynamatic technologies</p><br>
+    
+      <h4>Proposed corporate establishments:</h4>
+      <p class="w3-text-grey"> Boeing Aircraft Services, Philips, IBM, Cognizant to name a few</p>    
+    </div>
+    
+    <div class="w3-col l6 w3-padding-large">
+      <img src="images/house3.jpg" class="w3-round w3-image w3-opacity-min" alt="Menu" style="width:100%">
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-64" id="contact">
+    <h1>Contact</h1><br>
+    <p>Enveloped in an embrace of comfort and warmth, this home feels like bliss. A home where priceless moments become a lifetime of memories. A home that lets your children explore the gift of childhood. Where every day fills your heart and home with an abundance of joy and bliss. Do not hesitate to contact us.</p>
+    <p class="w3-text-blue-grey w3-large"><b>House Rental Service, RR Nagar, Bengaluru, Karnataka</b></p>
+    <p>You can also contact us by phone 98765432110 or email houserental111@gmail.com, or you can send us a message here:</p>
+    <form action="https://www.google.co.in/maps/place/Bengaluru,+Karnataka/@12.95396,77.4908551,11z/data=!3m1!4b1!4m5!3m4!1s0x3bae1670c9b44e6d:0xf8dfc3e8517e4fe0!8m2!3d12.9715987!4d77.5945627?hl=en-GB&authuser=0" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="number" placeholder="How many people" required name="People"></p>
+      <p><input class="w3-input w3-padding-16" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="w3-button w3-light-grey w3-section" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+  
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-32">
+  <p>Powered by:Magic Floor</p>
+</footer>
+
+
+</body>
+</html>
